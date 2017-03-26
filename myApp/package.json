@@ -34,12 +34,12 @@
     "typescript": "2.0.9"
   },
   "cordovaPlugins": [
-    "cordova-plugin-whitelist",
     "cordova-plugin-console",
-    "cordova-plugin-statusbar",
     "cordova-plugin-device",
-    "cordova-plugin-splashscreen",
-    "ionic-plugin-keyboard"
+    "cordova-plugin-whitelist",
+    "ionic-plugin-keyboard",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-splashscreen"
   ],
   "cordovaPlatforms": [],
   "description": "myApp: An Ionic project"
