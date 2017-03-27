@@ -14,13 +14,15 @@
 
 
 <ion-content padding>
-  <ion-item>
-    <ion-label color="primary" floating>Usuario</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label color="primary" floating>Contraseña</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
-  <button ion-button block>Ingresar</button>
+  <form (ngSubmit)="logForm()">
+    <ion-item>
+      <ion-label floating>Usuario</ion-label>
+      <ion-input type="text" [(ngModel)]="user.username" name="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="user.password" name="password"></ion-input>
+    </ion-item>
+    <button ion-button type="submit" block>Ingresar</button>
+  </form>
 </ion-content>

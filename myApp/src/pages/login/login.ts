@@ -13,10 +13,15 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class LoginPage {
 
+  private user = {};
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
 
+  logForm(){
+    console.log(this.user);
+  }
 }
