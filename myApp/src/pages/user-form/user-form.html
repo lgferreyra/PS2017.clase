@@ -1,0 +1,36 @@
+<!--
+  Generated template for the UserForm page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{titulo}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form (ngSubmit)="logForm()">
+      <ion-item>
+        <ion-label floating>Nombre</ion-label>
+        <ion-input type="text" [(ngModel)]="user.nombre" name="nombre"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Apellido</ion-label>
+        <ion-input type="text" [(ngModel)]="user.apellido" name="apellido"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Nombre de usuario</ion-label>
+        <ion-input type="text" [(ngModel)]="user.username" name="username"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="user.password" name="password"></ion-input>
+      </ion-item>
+      <button ion-button type="submit" block>Enviar datos</button>
+    </form>
+</ion-content>

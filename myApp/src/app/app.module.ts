@@ -6,6 +6,8 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
+import { UserFormPage } from '../pages/user-form/user-form';
+import { UserListPage } from '../pages/user-list/user-list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,7 +19,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    LoginPage
+    LoginPage,
+    UserFormPage,
+    UserListPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -29,7 +33,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    LoginPage
+    LoginPage,
+    UserFormPage,
+    UserListPage
   ],
   providers: [
     StatusBar,
