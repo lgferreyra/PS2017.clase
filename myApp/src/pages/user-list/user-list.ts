@@ -15,7 +15,7 @@ import { AlertController } from 'ionic-angular';
 })
 export class UserListPage {
 
-  listUser = [{nombre:"Leo", apellido:"ferreyra", username:"lferreyra", password:"asdfasdf"}, {nombre:"adminitrador", apellido:"todopoderoso", username:"admin", password:"asdfasdf"}];
+  listUser = [{nombre:"Leo", apellido:"ferreyra", username:"lferreyra", password:"asdfasdf"}, {nombre:"admin", apellido:"lalala", username:"admin", password:"asdfasdf"}];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
 
