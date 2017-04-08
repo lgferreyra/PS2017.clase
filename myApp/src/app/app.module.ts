@@ -12,6 +12,8 @@ import { UserListPage } from '../pages/user-list/user-list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Flashlight } from '@ionic-native/flashlight';
+import { Vibration } from '@ionic-native/vibration';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     UserListPage
   ],
   providers: [
+    Vibration,
+    Flashlight,
     StatusBar,
     SplashScreen,
     HttpModule,
